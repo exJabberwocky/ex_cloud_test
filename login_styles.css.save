@@ -1,0 +1,98 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Montserrat';
+    margin: 0;
+    padding: 0;
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    background-color: rgba(30, 30, 30, 0.65);
+    backdrop-filter: blur(12.5px);
+    border-radius: 40px;
+    width: 31%;
+    height: 65%;
+    text-align: center;
+    color: white;
+    position: relative;
+}
+
+h2 {
+    position: absolute;
+    top: 130px;
+    width: 100%;
+    margin: 0;
+    font-size: 24px;
+}
+
+form {
+    position: absolute;
+    top: 250px;
+    width: 100%;
+}
+
+input[type="text"],
+input[type="password"] {
+    width: 80%;
+    padding: 10px;
+    margin: 20px auto;
+    border: none;
+    border-radius: 5px;
+    display: block;
+}
+
+button {
+    position: absolute;
+    bottom: -105%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #000;
+    font-size: 16px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+button img {
+    margin-left: 10px;
+}
+
+button:hover {
+    box-shadow: 0px 5px 10px -5px rgba(153, 186, 233, 1);
+}
+
+.error-message {
+    position: absolute;
+    bottom: 75px;
+    width: 100%;
+    color: #CF2126;
+    font-size: 14px;
+    display: none; /* скрыть по умолчанию */
+    text-align: center;
+}
+
+footer {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+}
+

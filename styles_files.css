@@ -1,0 +1,223 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url('fonts/Montserrat.ttf') format('truetype');
+    font-weight: normal;
+}
+
+body {
+    font-family: 'Montserrat';
+    background: url('background.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 7.5%;
+    box-sizing: border-box;
+}
+
+.logo {
+    left: 7.5%;
+    top: 6.5%;
+    height: 213px;
+    width: 289px;
+}
+
+.welcome {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 11%;
+    right: 7.5%;
+    font-size: 18px;
+}
+
+.welcome p {
+    top: 11%;
+    right: 7.5%;
+    font-size: 18px;
+}
+
+.welcome img {
+    width: 24px;
+    height: 24px;
+    top: 11%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.server-time {
+    top: 20%;
+    right: 7.5%;
+    font-size: 16px;
+    color: #969696;
+}
+
+.server-time p {
+    top: 20%;
+    right: 7.5%;
+    font-size: 16px;
+    color: #969696;
+}
+
+main {
+    margin-top: 210px;
+    padding: 0 7.5%;
+}
+
+h1 {
+    margin-bottom: 15px;
+    font-size: 24px;
+}
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 45px;
+    font-size: 24px;
+}
+
+table {
+    width: 100%;
+    border-collapse: separate; /* Чтобы границы не сливались */
+    border-spacing: 0 10px; /* Отступ между строками */
+    margin-bottom: 15px;
+}
+
+th, td {
+    text-align: left;
+    background: transparent; /* Убираем фон у ячеек */
+}
+
+th {
+    padding-left: 10px;
+}
+
+td {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 19px;
+    padding-bottom: 18px;
+}
+
+td img {
+    width: 24px;
+    height: 24px;
+    top: 11%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+th {
+    font-size: 14px;
+}
+
+tbody tr {
+    background-color: rgba(30, 30, 30, 0.65);
+    backdrop-filter: blur(12.5px);
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px -5px rgba(153, 186, 233, 0);
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+tbody tr:hover {
+    box-shadow: 0px 5px 10px -5px rgba(153, 186, 233, 0.50);
+}
+
+tbody tr td:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+tbody tr td:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.button {
+    padding-left: 25px;
+    padding-right: 50px;
+    padding-top: 19px;
+    padding-bottom: 18px;
+    display: inline-block;
+    margin-top: 20px;
+    background-color: rgba(30, 30, 30, 0.45);
+    backdrop-filter: blur(12.5px);
+    border-radius: 15px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.button img {
+    width: 24px;
+    height: 24px;
+    top: 11%;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.button:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 10px -5px rgba(153, 186, 233, 0.50);
+}
+
+footer {
+    position: absolute;
+    bottom: 5%;
+    right: 7.5%;
+    text-align: right;
+    font-size: 14px;
+    color: #969696;
+}
+
+@media (max-width: 768px) {
+    header, main, footer {
+        padding: 10px;
+    }
+    .welcome {
+	align: left;
+	margin-top: 50px;
+    }
+    tr {
+	font-size: 10px;
+    }
+    .server-time {
+	margin-top: 65px;
+    }
+    .logo {
+        height: 150px;
+        width: 200px;
+    }
+    .welcome, .server-time, .button {
+        font-size: 14px;
+    }
+    .server-time p, .welcome p {
+        font-size: 14px;
+    }
+    h1, h2 {
+        font-size: 20px;
+    }
+    th, td {
+        font-size: 12px;
+        padding: 5px;
+    }
+    .button {
+        padding: 10px 20px;
+    }
+}
