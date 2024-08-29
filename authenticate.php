@@ -2,8 +2,8 @@
 session_start();
 
 $users = [
-    'ex_odmen' => 'WHiZ79YyyyARRR',
-    'bald&brother' => 'Iqup.Wy"S7',
+    'ex_odmen' => '*****',
+    'bald&brother' => '*****',
 ];
 
 $username = $_POST['username'];
